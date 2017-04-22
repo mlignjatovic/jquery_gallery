@@ -1,0 +1,26 @@
+[
+  {
+    "image":"img/guinea-pig.jpg",
+    "caption":"The guinea pig (Cavia porcellus), cavy or domestic guinea pig, or cuy for livestock breeds"
+  },
+  {
+    "image":"img/dog.jpg",
+    "caption":"Dogs and cats have a bad relationship"
+  },
+  {
+    "image":"img/doberman.jpg",
+    "caption":"The Doberman Pinscher is a medium-large breed of domestic dog"
+  },
+  {
+    "image":"img/bulldog.jpg",
+    "caption":"The French Bulldog also known as the Frenchie is a small breed of domestic dog"
+  },
+  {
+    "image":"img/chihuahua.jpg",
+    "caption":"During the first few weeks of life, a puppy’s primary activities are feeding, keeping warm and developing social skills"
+  },
+  {
+    "image":"img/rat.jpg",
+    "caption":"The fancy rat is a domesticated brown rat (Rattus norvegicus), which is the most common type of pet rat"
+  }
+]

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Gallery</title>
+    <link rel="stylesheet"  href="css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Mladen's Gallery</h1>
+      <input id="search" type="text" placeholder="search..." />
+      <a href='#'>Go to source</a>
+    </header>
+    <main>
+      <ul class="gallery">
+
+      </ul>
+    </main>
+    <footer>
+      <p>
+        &copy by Mladen Ignjatovic
+        <img src="img/mllogo.svg"/>
+      </p>
+    </footer>
+    <script>
+    $(document).ready(function() {
+        jQuery.ajax({
+          url:"gallery.json",
+          type:"GET",
+          dataType:"json",
+          success: function(result) {
+            for (var i = 0; i < result.length; i++) {
+              $('.gallery').append('<li><img src='+ result[i].image +'>'+
+                                  '<p>'+ result[i].caption +'</p>' +'</li>');
+            }
+          }
+        });
+    });
+    </script>
+    <script src="js/script.js"></script>
+    <script src="js/search.js"></script>
+
+  </body>
+</html>
